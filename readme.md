@@ -1,9 +1,73 @@
 ************************************************************************
-*                    Temperature sensor project                        *
+**                    Temperature sensor project                      **
 ************************************************************************
 
-Project: This project is about implementing a temperature sensor system 
+
+Project: 
+---------------
+This project is about implementing a temperature sensor system 
 using the following components:
-1. TI MSP430 Launchpad as the microcontroller
-2. XBee pro series 2 for communication
-3. A temperature sensor package.
+a) TI MSP430 Launchpad as the microcontroller
+b) XBee pro series 2 for communication
+c) A temperature sensor package.
+
+The readme contains about the following:
+I  . Programming the MSP430
+II . Set up and interface the XBee
+III. Set up and interface the temperature sensor
+IV . References
+
+
+
+
+
+
+I. Programming the msp430
+----------------------------
+The platform in use here is Ubintu 14.10. The toolchain used is the 
+(available in official repos) the msp430-gcc toolchain. The necessary 
+tools are: [1]
+	a) binutils-msp430
+	b) gcc-msp430
+    c) msp430-libc
+    d) mspdebug
+To install type the following commands:
+sudo apt-get install binutils-msp430 gcc-msp430 msp430-libc mspdebug
+
+The source for project has been written in C. All cod can be found folder 
+Code/src. Compile by typing "make". A binary called "bin.elf" will be
+generated. To program the microcontroller with the generated binary, we 
+use the mspdebug utility.
+
+Type "sudo mspdebug rf2500" to enter the utility.
+While in the utility, type: "prog bin.elf" and then "run" to start 
+execution on the microcontroller. [3]
+
+Refer to [2] for a complete guide on programming the MSP 430.
+
+
+
+
+
+IV. References
+-----------------
+[1] Programming the MSP430 Launchpad on Ubuntu
+	http://www.mycontraption.com/programming-the-msp430-launchpad-on-ubuntu/
+	
+[2] mspgcc. A port of the GNU tools to the Texas Instruments MSP430 
+	microcontrollers
+	
+[3] How-to: Launchpad programming with Linux
+	http://hackaday.com/2010/08/11/how-to-launchpad-programming-with-linux/
+
+
+
+
+
+
+
+
+
+
+
+
