@@ -1,0 +1,17 @@
+------------------------------------------------------------------------
+*                                                                      *
+*                    Roadmap for the temperature sensor                *
+*                                                                      *
+------------------------------------------------------------------------
+
+I. The MSP430
+--------------------
+Immediate goals:
+	1. Learn about I/O registers and pins, and learn to connect 
+	   peripherals
+	2. Develop a UART based I/O shell 
+	3. Configure and interface the MSP40
+	
+Long term goals:
+	1. Learn about tiny OS and burn it on to the MSP430
+	2. Interface an ssh protocol with the Xbee.
